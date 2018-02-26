@@ -53,7 +53,7 @@ class SearchBar extends Component{
   return Object.keys(this.sortByOptions).map(sortByOption =>
       {
         let sortByOptionValue = this.sortByOptions[sortByOption];
-        return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)} onClick={this.handleSortByChange.bind(this, sortByOptionValue)}> {sortByOptionValue} </li>;
+        return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)} onClick={this.handleSortByChange.bind(this, sortByOptionValue)}> {sortByOption} </li>;
       }
     )}
 
